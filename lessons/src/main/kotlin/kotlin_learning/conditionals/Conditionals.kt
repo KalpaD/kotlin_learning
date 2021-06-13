@@ -1,4 +1,4 @@
-package conditionals
+package kotlin_learning.conditionals
 
 
 fun main() {

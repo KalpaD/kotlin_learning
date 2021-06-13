@@ -1,4 +1,4 @@
-package lambda
+package kotlin_learning.lambda
 
 data class Employee(
     val city: City, val age: Int

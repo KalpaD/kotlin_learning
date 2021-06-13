@@ -1,4 +1,4 @@
-package loops
+package kotlin_learning.loops
 
 
 fun main() {

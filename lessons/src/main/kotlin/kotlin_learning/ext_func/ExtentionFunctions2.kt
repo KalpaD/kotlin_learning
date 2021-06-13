@@ -1,4 +1,4 @@
-package ext_func
+package kotlin_learning.ext_func
 
 // extension function are Java static function
 // have a look on following example

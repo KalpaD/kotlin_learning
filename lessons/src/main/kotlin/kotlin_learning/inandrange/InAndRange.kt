@@ -1,4 +1,4 @@
-package inandrange
+package kotlin_learning.inandrange
 
 
 fun main() {

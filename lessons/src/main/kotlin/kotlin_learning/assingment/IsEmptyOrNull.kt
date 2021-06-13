@@ -1,4 +1,4 @@
-package assingment
+package kotlin_learning.assingment
 
 fun main(args: Array<String>) {
     val s1: String? = null

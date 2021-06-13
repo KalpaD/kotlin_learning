@@ -1,4 +1,4 @@
-package exceptions
+package kotlin_learning.exceptions
 
 import java.lang.IllegalArgumentException
 

@@ -1,4 +1,4 @@
-package variables
+package kotlin_learning.variables
 
 fun main() {
 

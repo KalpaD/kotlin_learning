@@ -1,4 +1,4 @@
-package ext_func
+package kotlin_learning.ext_func
 
 fun main() {
 

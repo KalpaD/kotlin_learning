@@ -1,5 +1,5 @@
 @file:JvmName("Functions") // we can use @JvmName annotation to change the package name of the file
-package functions
+package kotlin_learning.functions
 
 fun main() {
 
