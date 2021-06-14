@@ -4,6 +4,8 @@ package kotlin_learning.loops
 fun main() {
     forLoop()
 
+    forLoopWithIndex()
+
     iterateOverMap()
 
     iterateOverRange()
@@ -21,6 +23,14 @@ fun forLoop() {
     val list = listOf("a", "b", "c")
     for (s in list) {
         println(s)
+    }
+}
+
+// we can iterate with index if we want
+fun forLoopWithIndex() {
+    val list = listOf("a", "b", "c")
+    for ((index, element) in list.withIndex()) {
+        println("printing with index $index : $element")
     }
 }
 

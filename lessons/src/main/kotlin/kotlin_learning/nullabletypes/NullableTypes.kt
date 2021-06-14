@@ -1,6 +1,6 @@
 package kotlin_learning.nullabletypes
 
-import inandrange.isLetter
+import kotlin_learning.inandrange.isLetter
 
 fun main() {
 
@@ -9,8 +9,10 @@ fun main() {
 
 fun nullableDemo() {
 
+    // this is a non null able type
     val s1: String = "not null"
 
+    // this is a nullable type, we tell kotlin compiler that by adding '?' at the end of the type
     val s2: String? = null
 
     s1.length // not complains from compiler
@@ -30,11 +32,12 @@ fun dealingWithNullableType() {
     }
 
     // or we can use Safe access
-    var len = s?.length // note the safe access operator consists of ?. combination
+    var len: Int? = s?.length // note the safe access operator consists of ?. combination
 
     // if (s != null) -> it returns the length
     // if (s == null) -> it returns null
 
+    // and note that the type of the len variable is not nullable Int , noted by Int?
     // above is same as
 
     len = if (s != null)  s.length else null
@@ -61,6 +64,7 @@ fun demoElvisOperator() {
     val b: Int? = 1
     val c: Int = 2
 
+    // elvis operator provide the default value
     val s1 = (a ?: 0) + c // 2
     val s2 = (b ?: 0) + c // 3
 
@@ -106,3 +110,13 @@ fun nullableDemo2() {
 }
 
 fun getString(a: Int): String? = if (a == 1) "abc" else  null
+
+// nullable types are implemented using annotations, hence like Java optional there is no performance cost
+
+fun foo(list1: List<Int?>, list2: List<Int>?) {
+    list1.size
+    list2?.size
+
+    val i: Int? = list1.get(0)
+    val j: Int? = list2?.get(0)
+}

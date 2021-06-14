@@ -9,12 +9,10 @@ fun main() {
 }
 
 fun throwDemo(number: Int): Int {
-    val precentage =
-        if (number in 0..100)
-            number
-        else
-            throw IllegalArgumentException("A precentage value must be between 0 and 100")
-    return precentage
+    return if (number in 0..100)
+        number
+    else
+        throw IllegalArgumentException("A percentage value must be between 0 and 100")
 }
 
 
