@@ -13,7 +13,6 @@ fun Child.foo() = "child"
 // get() in String with extension function.
 fun String.get(index: Int) = '*'
 
-
 fun main(args: Array<String>) {
     val parent: Parent = Child()
     println(parent.foo()) // result is parent

@@ -9,6 +9,8 @@ fun main() {
     val petDog = Dog()
     println(typeCheckWithWhen(petCat))
     println(typeCheckWithWhen(petDog))
+
+    println(getSound())
 }
 
 fun max(a: Int, b: Int): Int {
@@ -78,3 +80,16 @@ fun updateWeather(degrees: Int) {
         else -> "hot" to Color.RED
     }
 }
+
+fun getMyFavouritePet(): Pet {
+    val rand = (0..1).random()
+    return if (rand == 0) Cat() else Dog()
+}
+
+// when expression is good when we have multiple expressions to evaluate
+fun getSound(): String =
+        when (val pet = getMyFavouritePet()) {
+            is Cat -> pet.meow()
+            is Dog -> pet.woof()
+            else -> "---"
+        }

@@ -10,7 +10,7 @@ fun lambdaFunc() {
     // in Kotlin lambda syntax is as follows
     // note that they always use curly braces
                 // parameters       // body
-    var lambda = {x: Int, y: Int -> x + y}
+    var lambda = { x: Int, y: Int -> x + y }
 }
 
 fun lambdaWithList() {
@@ -35,9 +35,13 @@ fun lambdaWithList() {
     }
 }
 
+
 fun lambdaWithMap() {
     var map = mutableMapOf<Char, Int>(Pair('A', 1), Pair('B', 2), Pair('C', 3))
 
     map.mapValues { (key, value) -> "$key -> $value" }
+
+    // if once param to lambda is not used (this happens in many occasions), we can use underscore to define that
+    map.mapValues { (_, value) -> "$value" }
 
 }
