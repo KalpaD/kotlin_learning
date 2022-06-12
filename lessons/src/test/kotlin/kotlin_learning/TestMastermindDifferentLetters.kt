@@ -1,7 +1,7 @@
 package kotlin_learning
 
-import kotlin_learning._3_assingment.Evaluation
-import kotlin_learning._3_assingment.evaluateGuess
+import kotlin_learning.practical_assingments.Evaluation
+import kotlin_learning.practical_assingments.evaluateGuess
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test

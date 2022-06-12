@@ -1,4 +1,4 @@
-package kotlin_learning._3_assingment
+package kotlin_learning.practical_assingments
 
 import kotlin.math.min
 

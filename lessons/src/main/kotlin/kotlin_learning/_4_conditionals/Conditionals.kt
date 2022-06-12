@@ -63,7 +63,7 @@ class Dog : Pet {
     override fun woof(): String = "woof, woof"
 }
 
-// when can use to check types as well
+// `when` can use to check types as well
 fun typeCheckWithWhen(pet : Pet) =
     when (pet) {
         is Cat -> pet.meow()

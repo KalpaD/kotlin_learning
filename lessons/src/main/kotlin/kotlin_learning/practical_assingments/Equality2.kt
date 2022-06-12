@@ -1,4 +1,4 @@
-package kotlin_learning._3_assingment
+package kotlin_learning.practical_assingments
 
 /**
  * Implement 'equals2' without using '==' so that it was equivalent to 'equals1'. You can call 'equals()'

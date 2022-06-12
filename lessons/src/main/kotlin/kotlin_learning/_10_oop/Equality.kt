@@ -17,7 +17,7 @@ fun equalityDemoWithDataClass() {
 
     val f1 = Foo(1, 2)
     val f2 = Foo(1, 2)
-    // this prints false, as for the none data class, Kotlin generates the trivial equals method
+    // this prints false, as for none data class, Kotlin only generates the trivial equals method
     // which check the reference equality
     println(f1 == f2)
 

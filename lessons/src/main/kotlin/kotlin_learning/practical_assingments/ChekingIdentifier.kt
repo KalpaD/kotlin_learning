@@ -1,4 +1,4 @@
-package kotlin_learning._3_assingment
+package kotlin_learning.practical_assingments
 
 fun isValidIdentifier(s: String): Boolean {
     return s.isNotEmpty() && isStartsWithLetterOrUnderscore(s) && isValidContent(s)
