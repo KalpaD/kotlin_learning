@@ -27,8 +27,11 @@ class IntegrationTest(@Autowired val restTemplate: TestRestTemplate) {
 
     @Test
     fun `assert response content`() {
-        val entitiy = restTemplate.getForEntity<List<Message>>("/")
+        val entitiy = restTemplate.getForEntity<List<LinkedHashMap<String, String>>>("/")
         assertThat(entitiy.statusCode, `is`(HttpStatus.OK))
+        val messageList = entitiy.body?.map { it -> it["text"] }?.toList()
+        assertThat(messageList, hasItems("Hello!", "Bonjour!", "Privet!"))
+
     }
 
     @AfterAll
